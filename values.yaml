@@ -1,0 +1,12 @@
+labels: 
+  app: contoh-landing-page
+deployment:
+  replicas: 1
+  containers:
+    image: giovana02/landing-page:1
+    name: landing-page
+
+service:
+  ports: 80
+  type: LoadBalancer
+  protocol: TCP
